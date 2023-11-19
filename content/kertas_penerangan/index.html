@@ -58,6 +58,23 @@
       h1 {
         color: rgb(96, 8, 108);
       }
+      .slick-arrow.slick-hidden {
+    display: block;
+}
+
+.slick-prev:before,
+  .slick-next:before
+  {
+      font-family: 'slick';
+      font-size: 50px;
+      line-height: 1;
+  
+      opacity: .75;
+      color: rgb(91, 91, 91);
+  
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
     </style>
   </head>
 
@@ -405,12 +422,59 @@
                     elemen dan prinsip rekaan yang menghasilkan karya 2D
                     terhasil dalam imej seperti keadaan asal.
                   </p>
-                  <div class="card mb-4">
+                  <!-- sini -->
+
+                  <div class="slider">
+                    <div class="card mb-4" style="position: relative">
+                      <img
+                        src="/assets/img/content/kp12.jpg"
+                        class="img-center"
+                        alt="Image 1"
+                      />
+                      <button class="slick-prev"></button>
+                      <button class="slick-next"></button>
+                    </div>
+                   
+  
+                    <div class="card mb-4" style="position: relative">
+                      <img
+                        src="/assets/img/content/kp12b.jpg"
+                        class="img-center"
+                        alt="Image 3"
+                      />
+                      <button class="slick-prev"></button>
+                      <button class="slick-next"></button>
+                    </div>
+
+                    <div class="card mb-4" style="position: relative">
+                      <img
+                        src="/assets/img/content/kp12c.jpg"
+                        class="img-center"
+                        alt="Image 3"
+                      />
+                      <button class="slick-prev"></button>
+                      <button class="slick-next"></button>
+                    </div>
+  
+                    <div class="card mb-4" style="position: relative">
+                      <img
+                        src="/assets/img/content/kp12d.jpg"
+                        class="img-center"
+                        alt="Image 3"
+                      />
+                      <button class="slick-prev"></button>
+                      <button class="slick-next"></button>
+                    </div>
+                    
+  
+                    <!-- Repeat for other images -->
+                  </div>
+                  <!-- <div class="card mb-4">
                     <img
                       src="/assets/img/content/kp12.jpg"
                       class="img-center"
                     />
-                  </div>
+                  </div> -->
                 </div>
 
                 <div class="col-md-12">
@@ -492,7 +556,7 @@
                   <div class="slider">
                     <div class="card mb-4" style="position: relative">
                       <img
-                        src="/assets/img/content/kp14.jpg"
+                        src="/assets/img/content/kp14a.jpg"
                         class="img-center"
                         alt="Image 1"
                       />
@@ -502,6 +566,34 @@
                     <div class="card mb-4" style="position: relative">
                       <img
                         src="/assets/img/content/kp14b.jpg"
+                        class="img-center"
+                        alt="Image 2"
+                      />
+                      <button class="slick-prev"></button>
+                      <button class="slick-next"></button>
+                    </div>
+                    <div class="card mb-4" style="position: relative">
+                      <img
+                        src="/assets/img/content/kp14c.jpg"
+                        class="img-center"
+                        alt="Image 2"
+                      />
+                      <button class="slick-prev"></button>
+                      <button class="slick-next"></button>
+                    </div>
+
+                    <div class="card mb-4" style="position: relative">
+                      <img
+                        src="/assets/img/content/kp14d.jpg"
+                        class="img-center"
+                        alt="Image 2"
+                      />
+                      <button class="slick-prev"></button>
+                      <button class="slick-next"></button>
+                    </div>
+                    <div class="card mb-4" style="position: relative">
+                      <img
+                        src="/assets/img/content/kp14e.jpg"
                         class="img-center"
                         alt="Image 2"
                       />
@@ -615,7 +707,7 @@
         loop: true,
       });
     </script>
-    <script>
+    <!-- <script>
       window.addEventListener("load", function () {
         setTimeout(function open(event) {
           document.querySelector(".popup").style.display = "block";
@@ -624,6 +716,6 @@
       document.querySelector("#close").addEventListener("click", function () {
         document.querySelector(".popup").style.display = "none";
       });
-    </script>
+    </script> -->
   </body>
 </html>
