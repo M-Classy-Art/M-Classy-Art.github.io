@@ -1624,7 +1624,7 @@ section {
     /* background:url("assets/img/dashboard/1.jpg"); */
 
     width: 450px;
-    /* padding: 30px 40px; */
+    padding: 30px 49px;
     position: fixed;
     transform: translate(-50%,-50%);
     left: 50%;
@@ -1637,7 +1637,7 @@ section {
 }
 .popup button{
     display: block;
-    margin:  0 0 15px auto;
+    margin:  45px 0 0 auto;
     background-color: transparent;
     font-size: 30px;
     color: #c5c5c5;
@@ -1646,7 +1646,7 @@ section {
     cursor: pointer;
 }
 .popup p{
-    font-size: 14px;
+    font-size: 22px;
     /* text-align: justify;
     margin: 20px 0;
     line-height: 25px; */
