@@ -318,25 +318,20 @@
     </script>
 
     <script>
-      // Function to handle image saving
       function saveImage(event) {
         const imageSrc = event.target.getAttribute("data-image-src");
 
-        // Create an anchor element to trigger the download
         const downloadLink = document.createElement("a");
         downloadLink.href = imageSrc;
-        downloadLink.download = "tugasan_1.pdf"; // You can customize the file name here
+        downloadLink.download = "tugasan_1.pdf";
         downloadLink.style.display = "none";
 
-        // Append the anchor to the body and click it to trigger the download
         document.body.appendChild(downloadLink);
         downloadLink.click();
 
-        // Remove the anchor element
         document.body.removeChild(downloadLink);
       }
 
-      // Add a click event listener to all "Save" buttons
       const saveButtons = document.querySelectorAll(".save-button");
       saveButtons.forEach((button) => {
         button.addEventListener("click", saveImage);
